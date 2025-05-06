@@ -27,7 +27,7 @@ app.use(session({
     secret: node_session,
     saveUninitialized: false,
     resave: true,
-    save: mongoDB
+    store: mongoDB
 }));
 app.use('/public', express.static('public'));
 
